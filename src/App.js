@@ -7,16 +7,25 @@ class App extends Component {
       <div>
         <nav className="navbar navbar-inverse">
           <a className="navbar-brand">Props</a>
-        </nav>
-
+        </nav>    
+        
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
-              <Product />
-              <Product />
-              <Product />
-              <Product />
-              <Product />
+           
+            <div className="App-row">
+
+            
+              <Product
+              name = "Apple Iphone 6 16gb"
+              price = "15000000" />
+               <Product
+              name = "Oppo 5s"
+              price = "16000000" />
+               <Product
+              name = "Apple Iphone XS 512gb"
+              price = "20000000" />
+              </div>
+             
           </div>
         </div>
       </div>

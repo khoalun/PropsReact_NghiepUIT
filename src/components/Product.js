@@ -6,16 +6,18 @@ class Product extends Component {
     return (
       <div>
        
-       <div> <h1>Product Component</h1>
-      </div>
+        <h1>Product Component</h1>
+      
 
-<div className="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+
     <div className="thumbnail">
         <img alt="" />
         <div className="caption">
-            <h3>Tên sản phẩm</h3>
+            <h3>
+            { this.props.name }
+            </h3>
             <p>
-                5.000.0000 VND
+              {this.props.price} VND
             </p>
             <p>
                 <a  className="btn btn-primary"> Mua Ngay</a>
@@ -23,7 +25,7 @@ class Product extends Component {
             </p>
         </div>
     </div>
- </div>
+ 
           
       </div>
     );
