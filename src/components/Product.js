@@ -6,19 +6,20 @@ class Product extends Component {
     return (
       <div>
        
-        <h1>Product Component</h1>
+        <h1>Product</h1>
       
 
 
     <div className="thumbnail">
-        <img alt="" />
+        <img alt= {this.props.children}  src= {this.props.image} />
         <div className="caption">
             <h3>
-            { this.props.name }
+            { this.props.children}
             </h3>
             <p>
               {this.props.price} VND
             </p>
+          
             <p>
                 <a  className="btn btn-primary"> Mua Ngay</a>
                
